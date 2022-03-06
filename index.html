@@ -5,16 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example of an html page</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        Name: Victory Kaigorodova
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a class="header__item" href="#about">About me</a>
+                <a class="header__item" href="#skills">My skills</a>
+                <a class="header__item" href="#works">My works</a>
+                <a class="header__item" href="#contacts">Contacts</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <div class="main-wrapper">
+                <aside class="details">
+                    <span class="details__name heading">I'm 3D-designer</span>
+                    <div class="details__photo">
+                        <img src="img/main.jpg" alt="Photo" class="img">
+                    </div>
+                </aside>
+            
+                <section class="about" id="about">
+                        <div class="heading">About me</div>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Name</td>
+                                    <td>Viktoria</td>
+                                    <th>Age</td>
+                                    <td>19 years</td>
+                                </tr>
+                                <tr>
+                                    <th>LastName</td>
+                                    <td>Kaigorodova</td>
+                                    <th>Experience </th>
+                                    <td>1 year</td>
+                                </tr>
+                                <tr>
+                                    <th>Location</td>
+                                    <td>Kazakhstan</td>
+                                    <th>Сareer level</td>
+                                    <td>Trainee</td>
+                                </tr>
+                                <tr>
+                                    <th>E-mail</td>
+                                    <td>viktoriak2002654@gmail.com</td>
+                                    <th>Github</td>
+                                    <td><a href="https://github.com/victory-kaigorodova">victory-kaigorodova</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </section>
+            </div>
+        </div>
     </div>
-    <div>
-        Group: 20-VT-1
-    </div>
-    <div>
-        Discipline: web-technology
-    </div>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="heading">My skills</div>
+
+            <div class="skills-wrapper">
+                <ul class="list">
+                    <li class="li-heading">Technical:<br>Blender</li>
+                    <li>Modeling</li>
+                    <li>Texturing</li>
+                    <li>Rigging</li>
+                    <li>UV mapping</li>
+                </ul>
+                <ul class="list">
+                    <li class="li-heading">Languages</li>
+                    <li>Russian</li>
+                    <li>English</li>
+                </ul>
+                <ul class="list">
+                    <li class="li-heading">Personal</li>
+                    <li>Responsibility</li>
+                    <li>Friendliness</li>
+                    <li>Punctuality</li>
+                    <li>Patience</li>
+                    <li>Honesty</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="works" id="works">
+        <div class="container">
+            <div class="heading">My works</div>
+            <div class="works__flex">
+                <div class="works__line-1"><img class="img" src="img/work1.jpg"></div>
+                <div class="works__line-1"><img class="img" src="img/work3.jpg"></div>
+                <div class="works__line-2"><img class="img" src="img/work2.jpg"></div>
+                <div class="works__line-2"><img class="img" src="img/work4.jpg"></div>
+                <div class="works__line-2"><img class="img" src="img/work5.jpg"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="heading footer__heading">
+                Contact with me: <a class="footer__link" href="mailto:viktoriak2002654@gmail.com">write to the e-mail</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
