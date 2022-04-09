@@ -5,57 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example of an html page</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <header class="header">
+    <header class="section header nav">
         <div class="container">
-            <div class="header-wrapper">
-                <a class="header__item" href="#about">About me</a>
-                <a class="header__item" href="#skills">My skills</a>
-                <a class="header__item" href="#works">My works</a>
-                <a class="header__item" href="#contacts">Contacts</a>
+            <div class="text-right">
+                <a class="nav-item" href="#about">About me</a>
+                <a class="nav-item" href="#skills">My skills</a>
+                <a class="nav-item" href="#works">My works</a>
+                <a class="nav-item" href="#contacts">Contacts</a>
             </div>
         </div>
     </header>
 
     <div class="main">
         <div class="container">
-            <div class="main-wrapper">
-                <aside class="details">
-                    <span class="details__name heading">I'm 3D-designer</span>
-                    <div class="details__photo">
-                        <img src="img/main.jpg" alt="Photo" class="img">
+            <div class="row">
+                <aside class="details col-lg-3 col-md-3 img-rounded">
+                    <h3 class="text-center">I'm 3D-designer</h3>
+                    <div class="wrapper_img details_img">
+                        <img src="img/main.jpg" alt="Photo" class="img img-circle">
                     </div>
                 </aside>
-            
-                <section class="about" id="about">
-                        <div class="heading">About me</div>
-                        <table class="table">
+                <div class="col-lg-1 col-md-1" ></div>
+                <section class="section about col-lg-8 col-md-8" id="about">
+                        <h2 class="text-center">About me</h2>
+                        <table class="table table-bordered">
                             <tbody>
                                 <tr>
-                                    <th>Name</td>
+                                    <th class="active">Name</th>
                                     <td>Viktoria</td>
-                                    <th>Age</td>
+                                    <th class="active">Age</th>
                                     <td>19 years</td>
                                 </tr>
                                 <tr>
-                                    <th>LastName</td>
+                                    <th class="active">LastName</th>
                                     <td>Kaigorodova</td>
-                                    <th>Experience </th>
+                                    <th class="active">Experience </th>
                                     <td>1 year</td>
                                 </tr>
                                 <tr>
-                                    <th>Location</td>
+                                    <th class="active">Location</th>
                                     <td>Kazakhstan</td>
-                                    <th>Сareer level</td>
+                                    <th class="active">Сareer level</th>
                                     <td>Trainee</td>
                                 </tr>
                                 <tr>
-                                    <th>E-mail</td>
+                                    <th class="active">E-mail</th>
                                     <td>viktoriak2002654@gmail.com</td>
-                                    <th>Github</td>
+                                    <th class="active">Github</th>
                                     <td><a href="https://github.com/victory-kaigorodova">victory-kaigorodova</a></td>
                                 </tr>
                             </tbody>
@@ -65,25 +76,26 @@
         </div>
     </div>
 
-    <section class="skills" id="skills">
+    <section class="section skills" id="skills">
         <div class="container">
-            <div class="heading">My skills</div>
+            <h2 class="text-center">My skills</h2>
 
-            <div class="skills-wrapper">
-                <ul class="list">
-                    <li class="li-heading">Technical:<br>Blender</li>
+            <div class="text-center row">
+                <ul class="col-lg-4 col-md-4">
+                    <h5>Technical:</h5>
+                    <li>Blender</li>
                     <li>Modeling</li>
                     <li>Texturing</li>
                     <li>Rigging</li>
                     <li>UV mapping</li>
                 </ul>
-                <ul class="list">
-                    <li class="li-heading">Languages</li>
+                <ul class="col-lg-4 col-md-4">
+                    <h5>Languages:</h5>
                     <li>Russian</li>
                     <li>English</li>
                 </ul>
-                <ul class="list">
-                    <li class="li-heading">Personal</li>
+                <ul class="col-lg-4 col-md-4">
+                    <h5>Personal:</h5>
                     <li>Responsibility</li>
                     <li>Friendliness</li>
                     <li>Punctuality</li>
@@ -95,24 +107,24 @@
         </div>
     </section>
 
-    <section class="works" id="works">
+    <section class="section" id="works">
         <div class="container">
-            <div class="heading">My works</div>
-            <div class="works__flex">
-                <div class="works__line-1"><img class="img" src="img/work1.jpg"></div>
-                <div class="works__line-1"><img class="img" src="img/work3.jpg"></div>
-                <div class="works__line-2"><img class="img" src="img/work2.jpg"></div>
-                <div class="works__line-2"><img class="img" src="img/work4.jpg"></div>
-                <div class="works__line-2"><img class="img" src="img/work5.jpg"></div>
+            <h2 class="text-center">My works</h2>
+            <div class="works">
+                <div class="wrapper_img"><img class="img" src="img/work1.jpg"></div>
+                <div class="wrapper_img"><img class="img" src="img/work3.jpg"></div>
+                <div class="wrapper_img"><img class="img" src="img/work2.jpg"></div>
+                <div class="wrapper_img"><img class="img" src="img/work4.jpg"></div>
+                <div class="wrapper_img"><img class="img" src="img/work5.jpg"></div>
             </div>
         </div>
     </section>
 
-    <footer class="footer" id="contacts">
+    <footer class="section footer" id="contacts">
         <div class="container">
-            <div class="heading footer__heading">
-                Contact with me: <a class="footer__link" href="mailto:viktoriak2002654@gmail.com">write to the e-mail</a>
-            </div>
+            <h2 class="text-center">
+                Contact with me: <a class="" href="mailto:viktoriak2002654@gmail.com">write to the e-mail</a>
+            </h2>
         </div>
     </footer>
 
